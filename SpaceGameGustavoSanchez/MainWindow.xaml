@@ -1,0 +1,328 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="SpaceGame.MainWindow"
+        Title="Space Game" Height="470" Width="800" KeyDown="Window_KeyDown" MaxHeight="470" MaxWidth="800">
+
+    <!-- Main container -->
+    <Grid>
+        <!-- Start Menu -->
+        <Grid x:Name="StartMenu" Visibility="Visible">
+            <Grid.Background>
+                <ImageBrush ImageSource="/background4.png"/>
+            </Grid.Background>
+
+
+            <Canvas x:Name="starsMenu" >
+                <Image x:Name="StarNew_1" Source="Resources\star.png" Canvas.Left="191" Canvas.Top="43" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_2" Source="Resources\star.png" Canvas.Left="504" Canvas.Top="130" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_3" Source="Resources\star.png" Canvas.Left="351" Canvas.Top="142" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_4" Source="Resources\star.png" Canvas.Left="496" Canvas.Top="216" Width="16" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_5" Source="Resources\star.png" Canvas.Left="80" Canvas.Top="354" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_6" Source="Resources\star.png" Canvas.Left="448" Canvas.Top="226" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_7" Source="Resources\star.png" Canvas.Left="249" Canvas.Top="194" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_8" Source="Resources\star.png" Canvas.Left="28" Canvas.Top="84" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_9" Source="Resources\star.png" Canvas.Left="375" Canvas.Top="362" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_10" Source="Resources\star.png" Canvas.Left="9" Canvas.Top="202" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_11" Source="Resources\star.png" Canvas.Left="416" Canvas.Top="32" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_12" Source="Resources\star.png" Canvas.Left="125" Canvas.Top="84" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_13" Source="Resources\star.png" Canvas.Left="570" Canvas.Top="226" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_14" Source="Resources\star.png" Canvas.Left="656" Canvas.Top="354" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_15" Source="Resources\star.png" Canvas.Left="212" Canvas.Top="379" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_16" Source="Resources\star.png" Canvas.Left="626" Canvas.Top="66" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_17" Source="Resources\star.png" Canvas.Left="677" Canvas.Top="130" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_18" Source="Resources\star.png" Canvas.Left="512" Canvas.Top="346" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_19" Source="Resources\star.png" Canvas.Left="677" Canvas.Top="253" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_20" Source="Resources\star.png" Canvas.Left="590" Canvas.Top="406" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_21" Source="Resources\star.png" Canvas.Left="538" Canvas.Top="66" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_22" Source="Resources\star.png" Canvas.Left="324" Canvas.Top="43" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_23" Source="Resources\star.png" Canvas.Left="401" Canvas.Top="286" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_24" Source="Resources\star.png" Canvas.Left="427" Canvas.Top="130" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_25" Source="Resources\star.png" Canvas.Left="475" Canvas.Top="395" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_26" Source="Resources\star.png" Canvas.Left="726" Canvas.Top="43" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_27" Source="Resources\star.png" Canvas.Left="726" Canvas.Top="395" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_28" Source="Resources\star.png" Canvas.Left="342" Canvas.Top="226" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_29" Source="Resources\star.png" Canvas.Left="278" Canvas.Top="111" Width="15" Height="16" Tag="starsMainMenu" />
+                <Image x:Name="StarNew_30" Source="/Resources/star.png" Canvas.Left="28" Canvas.Top="298" Width="16" Height="16" Tag="starsMainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Image x:Name="StarNew_31" Source="/Resources/star.png" Canvas.Left="125" Canvas.Top="403" Width="14" Height="16" Tag="starsMainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Image x:Name="StarNew_32" Source="/Resources/star.png" Canvas.Left="618" Canvas.Top="186" Width="16" Height="16" Tag="starsMainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Image x:Name="StarNew_33" Source="/Resources/star.png" Canvas.Left="748" Canvas.Top="346" Width="16" Height="16" Tag="starsMainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Image x:Name="StarNew_34" Source="/Resources/star.png" Canvas.Left="726" Canvas.Top="174" Width="15" Height="16" Tag="starsMainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Image x:Name="StarNew_35" Source="/Resources/star.png" Canvas.Left="118" Canvas.Top="306" Width="14" Height="16" Tag="starsMainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Image x:Name="StarNew_36" Source="/Resources/star.png" Canvas.Left="16" Canvas.Top="122" Width="16" Height="16" Tag="starsMainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Image x:Name="StarNew_37" Source="/Resources/star.png" Canvas.Left="204" Canvas.Top="122" Width="16" Height="16" Tag="starsMainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Image x:Name="StarNew_38" Source="/Resources/star.png" Canvas.Left="184" Canvas.Top="209" Width="14" Height="16" Tag="starsMainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Image x:Name="StarNew_39" Source="/Resources/star.png" Canvas.Left="220" Canvas.Top="261" Width="14" Height="16" Tag="starsMainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Image x:Name="StarNew_40" Source="/Resources/star.png" Canvas.Left="72" Canvas.Top="254" Width="16" Height="16" Tag="starsMainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Image x:Name="StarNew_41" Source="/Resources/star.png" Canvas.Left="220" Canvas.Top="313" Width="15" Height="16" Tag="starsMainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Image x:Name="StarNew_42" Source="/Resources/star.png" Canvas.Left="741" Canvas.Top="245" Width="15" Height="16" Tag="starsMainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Image x:Name="StarNew_43" Source="/Resources/star.png" Canvas.Left="734" Canvas.Top="130" Width="14" Height="16" Tag="starsMainMenu" HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <Image x:Name="StarNew_44" Source="/Resources/star.png" Canvas.Left="125" Canvas.Top="253" Width="15" Height="16" Tag="starsMainMenu" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <Image x:Name="StarNew_45" Source="/Resources/star.png" Canvas.Left="736" Canvas.Top="83" Width="16" Height="16" Tag="starsMainMenu" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+
+            </Canvas>
+
+
+
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="288,298,0,0">
+                <!-- Start Game Button -->
+
+                <!-- Statistics Button -->
+                <Button Content="Statistics" Width="200" Height="50" Margin="10" Click="StatisticsButton_Click" Foreground="#FF00ACFF" BorderBrush="{x:Null}" FontSize="36" FontWeight="Bold" >
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+                </Button>
+                <Button Content="Start Game" Width="200" Height="50" Click="StartGameButton_Click" BorderBrush="{x:Null}" FontSize="36" FontWeight="Bold" Foreground="#FF00ACFF" >
+                    <Button.Background>
+                        <ImageBrush/>
+                    </Button.Background>
+
+                </Button>
+            </StackPanel>
+
+            <Image HorizontalAlignment="Left" Height="190" Margin="208,46,0,0" VerticalAlignment="Top" Width="380" Grid.RowSpan="3">
+                <Image.Source>
+                    <BitmapImage UriSource="pack://application:,,,/Resources/logo.png"/>
+                </Image.Source>
+            </Image>
+        </Grid>
+
+        <!--Staticts-->
+
+        <Grid x:Name="StatisticsLayer" Visibility="Collapsed" av:IsHidden="True">
+            <Grid.Background>
+                <ImageBrush ImageSource="/background4.png"/>
+            </Grid.Background>
+
+            <!-- Row definitions for the grid layout -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <!-- Content elements go below -->
+            <TextBlock Text="Statistics Screen" HorizontalAlignment="Center" 
+               VerticalAlignment="Center" FontSize="36" Foreground="White" FontWeight="Bold"/>
+            <Button Content="Back" Width="122" Height="52" HorizontalAlignment="Left" 
+            VerticalAlignment="Top" Margin="10,10,0,0" Click="BackButton_Click" 
+            Background="{x:Null}" Foreground="#FF0668DC" FontSize="36" 
+            FontWeight="Bold" BorderBrush="{x:Null}"/>
+
+
+
+
+            <!--Stars-->
+            <Canvas x:Name="StarsStatisticsContainer">
+                <Image x:Name="StarsStatistics_1" Source="Resources\star.png" Canvas.Left="191" Canvas.Top="43" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_2" Source="Resources\star.png" Canvas.Left="504" Canvas.Top="130" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_3" Source="Resources\star.png" Canvas.Left="351" Canvas.Top="142" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_4" Source="Resources\star.png" Canvas.Left="496" Canvas.Top="216" Width="16" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_5" Source="Resources\star.png" Canvas.Left="80" Canvas.Top="354" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_6" Source="Resources\star.png" Canvas.Left="448" Canvas.Top="226" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_7" Source="Resources\star.png" Canvas.Left="249" Canvas.Top="194" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_8" Source="Resources\star.png" Canvas.Left="28" Canvas.Top="84" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_9" Source="Resources\star.png" Canvas.Left="375" Canvas.Top="362" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_10" Source="Resources\star.png" Canvas.Left="9" Canvas.Top="202" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_11" Source="Resources\star.png" Canvas.Left="416" Canvas.Top="32" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_12" Source="Resources\star.png" Canvas.Left="125" Canvas.Top="84" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_13" Source="Resources\star.png" Canvas.Left="570" Canvas.Top="226" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_14" Source="Resources\star.png" Canvas.Left="656" Canvas.Top="354" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_15" Source="Resources\star.png" Canvas.Left="212" Canvas.Top="379" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_16" Source="Resources\star.png" Canvas.Left="626" Canvas.Top="66" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_17" Source="Resources\star.png" Canvas.Left="677" Canvas.Top="130" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_18" Source="Resources\star.png" Canvas.Left="512" Canvas.Top="346" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_19" Source="Resources\star.png" Canvas.Left="677" Canvas.Top="253" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_20" Source="Resources\star.png" Canvas.Left="590" Canvas.Top="406" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_21" Source="Resources\star.png" Canvas.Left="538" Canvas.Top="66" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_22" Source="Resources\star.png" Canvas.Left="324" Canvas.Top="43" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_23" Source="Resources\star.png" Canvas.Left="401" Canvas.Top="286" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_24" Source="Resources\star.png" Canvas.Left="427" Canvas.Top="130" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_25" Source="Resources\star.png" Canvas.Left="475" Canvas.Top="395" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_26" Source="Resources\star.png" Canvas.Left="726" Canvas.Top="43" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_27" Source="Resources\star.png" Canvas.Left="726" Canvas.Top="395" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_28" Source="Resources\star.png" Canvas.Left="342" Canvas.Top="226" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_29" Source="Resources\star.png" Canvas.Left="278" Canvas.Top="111" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_30" Source="/Resources/star.png" Canvas.Left="28" Canvas.Top="298" Width="16" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_31" Source="/Resources/star.png" Canvas.Left="125" Canvas.Top="403" Width="14" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_32" Source="/Resources/star.png" Canvas.Left="618" Canvas.Top="186" Width="16" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_33" Source="/Resources/star.png" Canvas.Left="748" Canvas.Top="346" Width="16" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_34" Source="/Resources/star.png" Canvas.Left="726" Canvas.Top="174" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_35" Source="/Resources/star.png" Canvas.Left="118" Canvas.Top="306" Width="14" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_36" Source="/Resources/star.png" Canvas.Left="16" Canvas.Top="122" Width="16" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_37" Source="/Resources/star.png" Canvas.Left="204" Canvas.Top="122" Width="16" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_38" Source="/Resources/star.png" Canvas.Left="184" Canvas.Top="209" Width="14" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_39" Source="/Resources/star.png" Canvas.Left="220" Canvas.Top="261" Width="14" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_40" Source="/Resources/star.png" Canvas.Left="72" Canvas.Top="254" Width="16" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_41" Source="/Resources/star.png" Canvas.Left="220" Canvas.Top="313" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_42" Source="/Resources/star.png" Canvas.Left="741" Canvas.Top="245" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_43" Source="/Resources/star.png" Canvas.Left="734" Canvas.Top="130" Width="14" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_44" Source="/Resources/star.png" Canvas.Left="125" Canvas.Top="253" Width="15" Height="16" Tag="StarsStatistics" />
+                <Image x:Name="StarsStatistics_45" Source="/Resources/star.png" Canvas.Left="736" Canvas.Top="83" Width="16" Height="16" Tag="StarsStatistics" />
+            </Canvas>
+
+            <!--table-->
+
+
+
+            <!-- DataGrid for displaying statistics -->
+            <DataGrid x:Name="StatisticsDataGrid" Grid.Row="1" AutoGenerateColumns="False" 
+          HeadersVisibility="Column" IsReadOnly="True" CanUserResizeColumns="False" 
+          CanUserResizeRows="False" Margin="201,10,200,10" Background="{x:Null}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Rank" Binding="{Binding Rank}" Width="*" />
+                    <DataGridTextColumn Header="Player Name" Binding="{Binding PlayerName}" Width="*" />
+                    <DataGridTextColumn Header="Score" Binding="{Binding Score}" Width="*" />
+                    <DataGridTextColumn Header="Time (s)" Binding="{Binding Time}" Width="*" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+
+        </Grid>
+
+        <!--MainGame-->
+
+        <Canvas x:Name="GameCanvas" Margin="0,0,0,-16" av:IsHidden="True">
+            <Canvas.Background>
+                <ImageBrush ImageSource="/Resources/background4.png"/>
+            </Canvas.Background>
+
+            <!-- Player -->
+
+            <!--Enemies-->
+
+
+            <!-- Bullets -->
+
+            <!--- End -->
+
+            <Image x:Name="Star1" Source="Resources\star.png" Canvas.Left="191" Canvas.Top="43" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star2" Source="Resources\star.png" Canvas.Left="504" Canvas.Top="130" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star3" Source="Resources\star.png" Canvas.Left="351" Canvas.Top="142" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star4" Source="Resources\star.png" Canvas.Left="496" Canvas.Top="216" Width="16" Height="16" Tag="star" />
+            <Image x:Name="Star5" Source="Resources\star.png" Canvas.Left="80" Canvas.Top="354" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star6" Source="Resources\star.png" Canvas.Left="448" Canvas.Top="226" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star7" Source="Resources\star.png" Canvas.Left="249" Canvas.Top="194" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star8" Source="Resources\star.png" Canvas.Left="28" Canvas.Top="84" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star9" Source="Resources\star.png" Canvas.Left="375" Canvas.Top="362" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star10" Source="Resources\star.png" Canvas.Left="9" Canvas.Top="202" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star11" Source="Resources\star.png" Canvas.Left="416" Canvas.Top="32" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star12" Source="Resources\star.png" Canvas.Left="125" Canvas.Top="84" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star13" Source="Resources\star.png" Canvas.Left="570" Canvas.Top="226" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star14" Source="Resources\star.png" Canvas.Left="656" Canvas.Top="354" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star15" Source="Resources\star.png" Canvas.Left="212" Canvas.Top="379" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star16" Source="Resources\star.png" Canvas.Left="626" Canvas.Top="66" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star17" Source="Resources\star.png" Canvas.Left="677" Canvas.Top="130" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star18" Source="Resources\star.png" Canvas.Left="512" Canvas.Top="346" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star19" Source="Resources\star.png" Canvas.Left="677" Canvas.Top="253" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star20" Source="Resources\star.png" Canvas.Left="590" Canvas.Top="406" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star21" Source="Resources\star.png" Canvas.Left="538" Canvas.Top="66" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star22" Source="Resources\star.png" Canvas.Left="324" Canvas.Top="43" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star23" Source="Resources\star.png" Canvas.Left="401" Canvas.Top="286" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star24" Source="Resources\star.png" Canvas.Left="427" Canvas.Top="130" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star25" Source="Resources\star.png" Canvas.Left="475" Canvas.Top="395" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star26" Source="Resources\star.png" Canvas.Left="726" Canvas.Top="43" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star27" Source="Resources\star.png" Canvas.Left="726" Canvas.Top="395" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star28" Source="Resources\star.png" Canvas.Left="342" Canvas.Top="226" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star29" Source="Resources\star.png" Canvas.Left="278" Canvas.Top="111" Width="15" Height="16" Tag="star" />
+            <Image x:Name="Star10_Copy" Source="/Resources/star.png" Canvas.Left="28" Canvas.Top="298" Width="16" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy1" Source="/Resources/star.png" Canvas.Left="125" Canvas.Top="403" Width="14" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy2" Source="/Resources/star.png" Canvas.Left="618" Canvas.Top="186" Width="16" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy3" Source="/Resources/star.png" Canvas.Left="748" Canvas.Top="346" Width="16" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy4" Source="/Resources/star.png" Canvas.Left="726" Canvas.Top="174" Width="15" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy5" Source="/Resources/star.png" Canvas.Left="118" Canvas.Top="306" Width="14" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy7" Source="/Resources/star.png" Canvas.Left="16" Canvas.Top="122" Width="16" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy8" Source="/Resources/star.png" Canvas.Left="204" Canvas.Top="122" Width="16" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy9" Source="/Resources/star.png" Canvas.Left="184" Canvas.Top="209" Width="14" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy10" Source="/Resources/star.png" Canvas.Left="220" Canvas.Top="261" Width="14" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy11" Source="/Resources/star.png" Canvas.Left="72" Canvas.Top="254" Width="16" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy12" Source="/Resources/star.png" Canvas.Left="220" Canvas.Top="313" Width="15" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy13" Source="/Resources/star.png" Canvas.Left="741" Canvas.Top="245" Width="15" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy14" Source="/Resources/star.png" Canvas.Left="734" Canvas.Top="130" Width="14" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy15" Source="/Resources/star.png" Canvas.Left="125" Canvas.Top="253" Width="15" Height="16" Tag="star" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Image x:Name="Star10_Copy16" Source="/Resources/star.png" Canvas.Left="597" Canvas.Top="298" Width="16" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy17" Source="/Resources/star.png" Canvas.Left="590" Canvas.Top="134" Width="16" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy18" Source="/Resources/star.png" Canvas.Left="324" Canvas.Top="313" Width="16" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy19" Source="/Resources/star.png" Canvas.Left="28" Canvas.Top="387" Width="16" Height="16" Tag="star" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <Image x:Name="Star10_Copy6" Source="/Resources/star.png" Canvas.Left="618" Canvas.Top="186" Width="16" Height="16" Tag="star" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+
+            <!--Labels-->
+            <Label x:Name="Label_Kill" Content="Killed: 0" Height="31" Canvas.Left="9" Canvas.Top="8" Width="132" Background="{x:Null}" Foreground="#FF85F2F6" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Segoe UI Semibold" FontWeight="Bold"/>
+            <Label x:Name="Label_Score" Content="Score: 0" Height="31" Canvas.Left="145" Canvas.Top="8" Width="141" Background="{x:Null}" Foreground="#FF1F00FF" FontSize="18" FontFamily="Segoe UI Semibold" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold"/>
+            <!--Rocks-->
+            <Image x:Name="Rock1" Width="90" Height="63" Canvas.Top="54" Canvas.Left="900" Tag="Enemy">
+                <Image.Source>
+                    <BitmapImage UriSource="pack://application:,,,/Resources/image_7.png"/>
+                </Image.Source>
+            </Image>
+            <Image x:Name="PlayerImage" Width="60" Height="80" Canvas.Top="142" Canvas.Left="60">
+                <Image.Source>
+                    <BitmapImage UriSource="pack://application:,,,/Resources/SpaceShip_resized_1.png"/>
+                </Image.Source>
+            </Image>
+            <Image x:Name="Bullet1" Width="35" Height="12" Canvas.Top="171" Canvas.Left="125">
+                <Image.Source>
+                    <BitmapImage UriSource="pack://application:,,,/Resources/bullet.png"/>
+                </Image.Source>
+            </Image>
+            <Image x:Name="Rock2" Width="60" Height="63" Canvas.Top="362" Canvas.Left="900" Tag="Enemy">
+                <Image.Source>
+                    <BitmapImage UriSource="pack://application:,,,/Resources/image_8.png"/>
+                </Image.Source>
+            </Image>
+            <Image x:Name="e_4" Width="50" Height="60" Canvas.Top="355" Canvas.Left="900" Tag="Enemy">
+                <Image.Source>
+                    <BitmapImage UriSource="pack://application:,,,/Resources/image_11.png"/>
+                </Image.Source>
+            </Image>
+            <Image x:Name="e_3" Width="50" Height="60" Canvas.Top="264" Canvas.Left="900" Tag="Enemy">
+                <Image.Source>
+                    <BitmapImage UriSource="pack://application:,,,/Resources/image_3.png"/>
+                </Image.Source>
+            </Image>
+            <Image x:Name="e_1" Width="50" Height="60" Canvas.Top="47" Canvas.Left="900" Tag="Enemy">
+                <Image.Source>
+                    <BitmapImage UriSource="pack://application:,,,/Resources/image_1.png"/>
+                </Image.Source>
+            </Image>
+            <Image x:Name="e_2" Width="50" Height="60" Canvas.Top="148" Canvas.Left="900" HorizontalAlignment="Center" VerticalAlignment="Top" Tag="Enemy">
+                <Image.Source>
+                    <BitmapImage UriSource="pack://application:,,,/Resources/image_2.png"/>
+                </Image.Source>
+            </Image>
+            <Image x:Name="e_4_bullet" Width="34" Height="12" Canvas.Top="379" Canvas.Left="900" HorizontalAlignment="Center" VerticalAlignment="Top" Tag="Enemy">
+                <Image.Source>
+                    <BitmapImage UriSource="pack://application:,,,/Resources/image_5.png"/>
+                </Image.Source>
+            </Image>
+            <Image x:Name="e_3_bullet" Width="34" Height="12" Canvas.Top="288" Canvas.Left="900" HorizontalAlignment="Center" VerticalAlignment="Top" Tag="Enemy">
+                <Image.Source>
+                    <BitmapImage UriSource="pack://application:,,,/Resources/image_5.png"/>
+                </Image.Source>
+            </Image>
+            <Image x:Name="e_2_bullet" Width="34" Height="12" Canvas.Top="169" Canvas.Left="900" HorizontalAlignment="Center" VerticalAlignment="Top" Tag="Enemy">
+                <Image.Source>
+                    <BitmapImage UriSource="pack://application:,,,/Resources/image_5.png"/>
+                </Image.Source>
+            </Image>
+            <Image x:Name="e_1_bullet" Width="34" Height="12" Canvas.Top="71" Canvas.Left="900" HorizontalAlignment="Left" VerticalAlignment="Center" Tag="Enemy">
+                <Image.Source>
+                    <BitmapImage UriSource="pack://application:,,,/Resources/image_5.png"/>
+                </Image.Source>
+            </Image>
+
+            <!--Timer-->
+            <Label x:Name="TimerLabel" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="72" Foreground="#FF00ACFF" Visibility="Hidden" Canvas.Left="418" Canvas.Top="148" Height="108" Width="64" FontWeight="Bold" />
+            <TextBlock x:Name="CountdownLabel" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="TimerDisplay" Content="Time: 0 s" 
+       HorizontalAlignment="Left" VerticalAlignment="Top"
+       FontSize="16" Foreground="#FF85F2F6" Canvas.Left="278" Canvas.Top="12" FontWeight="Bold" />
+
+
+        </Canvas>
+
+    </Grid>
+
+</Window>
